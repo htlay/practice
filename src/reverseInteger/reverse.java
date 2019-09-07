@@ -26,9 +26,9 @@ public class reverse {
         return reversedNumber;
     }   
     public static void main(String[] args){
-       reverse pal = new reverse();
+       reverse rev = new reverse();
        int checked;
-       checked = pal.reverse(1508880009);
+       checked = rev.reverse(1508880009);
        System.out.print(checked);
     }
 }
