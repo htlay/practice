@@ -18,7 +18,9 @@ public class URLify {
                 spaceCount++;
             }
         }
+        System.out.println(spaceCount);
         index = trueLength + spaceCount * 2;
+        System.out.println("index == " + index );
         if(trueLength  < str.length){
             str[trueLength] = '\0';
         }
@@ -39,7 +41,7 @@ public class URLify {
     
     public static void main(String[] args){
         URLify test = new URLify();
-        char[] chars = "Mr John Smith       ".toCharArray();
-        System.out.println(test.replaceSpaces(chars, 13));
+        char[] chars = "Mr John Smith lj       ".toCharArray();
+        System.out.println(test.replaceSpaces(chars, 16));
     }
 }
